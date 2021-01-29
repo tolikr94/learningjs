@@ -1,0 +1,106 @@
+body {
+  font-family: 'Gorditas', cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #51c2d5;
+}
+.msg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 3rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 5rem;
+  background-color:#000;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+.redtxt {
+  color: #c70039;
+}
+.yellowtxt {
+  color: #ffd56b;
+}
+.hidden {
+  visibility: hidden;
+}
+.header {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.gameBoard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.playBox {
+  height: 8rem;
+  width: 8rem;
+  background-color: #23689b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.round {
+  border-radius: 50%;
+  background-color: #487e95;
+  height: 95%;
+  width: 95%;
+}
+.roundTopLeft {
+  border-radius: 1rem 0 0 0;
+}
+.roundTopRight {
+  border-radius: 0 1rem 0 0;
+}
+.roundBotLeft {
+  border-radius: 0 0 0 1rem;
+}
+.roundBotRight {
+  border-radius: 0 0 1rem 0;
+}
+
+.red {
+  background-color: #c70039;
+}
+.yellow {
+  background-color: #ffd56b;
+}
+.redhover {
+  background-color: #c70039;
+  opacity: 50%;
+}
+.yellowhover {
+  background-color: #ffd56b;
+  opacity: 50%;
+}
+@media screen and (max-width: 900px) {
+  .playBox {
+    height: 6rem;
+    width: 6rem;
+  }
+  .round {
+    height: 90%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .header {
+    font-size: 4rem;
+  }
+  .playBox {
+    height: 3.7rem;
+    width: 3.7rem;
+  }
+  .round {
+    height: 90%;
+    width: 90%;
+  }
+}
